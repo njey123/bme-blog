@@ -1,0 +1,58 @@
+/* Need fallback fonts? */
+
+* {
+  /* font-family: 'Shadows Into Light', cursive; */
+  /* font-family: 'Bubbler One', sans-serif; */
+  font-family: 'Shadows Into Light Two', cursive;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+/* Start of header */
+header nav {
+  display: flex;
+  justify-content: flex-end;  /* Items are positioned at end of container */
+  background-color: lightskyblue;
+}
+
+header p {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 30px;
+  margin: 0;
+}
+/* End of header */
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background: url("img/sunset.JPG") no-repeat right center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: azure;
+  height: 550px;
+}
+
+/* Start of footer */
+footer {
+  font-size: 15px;
+  padding: 15px 0;
+  background-color: lightsteelblue;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+/* End of footer */
