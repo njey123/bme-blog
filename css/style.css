@@ -4,22 +4,20 @@
   font-family: 'Shadows Into Light Two', cursive;
 }
 
-footer .row {
-  display: flex;
-  align-items: center;
+a {
+  cursor: pointer;
 }
 
 /* Start of nav bar */
 .navbar-inverse {
   width: 100%;
-  height: 60px;
+  height: 57px;
   margin-bottom: 0;
   padding-top: 2px;
   position: fixed;
-  background-color: rgb(75, 77, 77);
-  border-color: rgb(75, 77, 77);
+  background-color: black;
+  border-color: black;
   border-radius: 0;
-  box-shadow: 5px 5px 10px rgb(25, 27, 27);
   z-index: 10000;
 }
 
@@ -33,9 +31,8 @@ footer .row {
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  margin-top: 3px;
   color: white;
-  background-color: rgb(95, 97, 97);
+  background-color: rgb(55, 57, 57);
   border-radius: 5px;
 }
 
@@ -49,14 +46,13 @@ footer .row {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  margin-top: 3px;
   color: white;
-  background-color: rgb(95, 97, 97);
+  background-color: rgb(55, 57, 57);
   border-radius: 5px;
 }
 
 @media only screen and (max-width: 766px) {
-.collapsing, .in {background-color: rgb(50, 52, 52); border-radius: 5px;}
+.collapsing, .in {background-color: rgb(35, 37, 37); border-radius: 5px;}
 .collapsing ul li a, .in ul li a {color: white; margin-right: 23px;}
 .collapsing ul li a:hover, .in ul li a:hover {color: white; margin-right: 23px;}
 .collapsing ul li a:focus, .in ul li a:focus {color: white; margin-right: 23px;}
@@ -66,49 +62,85 @@ footer .row {
 /* Start of jumbotron */
 .jumbotron .container-fluid {
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 7%;
 }
 
 .jumbotron {
-  height: 600px;
+  min-height: 650px;
   margin-bottom: 0;
   align-items: center;
-  background: url("img/sunset.jpg") no-repeat right center;
+  background: url("img/bme-sweater.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-#homepage-titles {
+#jumbotron-titles {
   position: absolute;
-  color: rgb(35, 37, 37);
+  color: whitesmoke;
 }
 
 .jumbotron h2 {
+  width: 75%;
   font-size: 60px;
   font-weight: 800;
-}
-
-.jumbotron h3 {
-  font-size: 35px;
-  font-weight: 600;
+  text-shadow: 4px 4px black;
 }
 /* End of jumbotron */
 
 .homepage-content {
   width: 100%;
-  height: 500px;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("img/sunset.jpg");
+  min-height: 500px;
+  padding: 10% 5%;
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("img/bme-sweater.jpg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: cover;
   background-attachment: fixed;
+  font-size: 28px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-content a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Unvisited link */
+.homepage-content a:link {
+    color: white;
+}
+
+/* Visited link */
+.homepage-content a:visited {
+    color: white;
+}
+
+/* Mouse over link */
+.homepage-content a:hover {
+    color: orange;
+}
+
+/* Selected link */
+.homepage-content a:active {
+    color: orange;
 }
 
 /* Start of footer */
 footer {
+  height: 55px;
   font-size: 15px;
-  padding: 15px 0;
-  background-color: lightcoral;
+  font-weight: 600;
+  color: white;
+  padding: 17px 0;
+  background-color: black;
+}
+
+footer .row {
+  display: flex;
+  align-items: center;
 }
 
 footer .col-sm-8 {
@@ -118,5 +150,25 @@ footer .col-sm-8 {
 
 footer ul {
   list-style: none;
+}
+
+/* Unvisited link */
+footer a:link {
+    color: lightcoral;
+}
+
+/* Visited link */
+footer a:visited {
+    color: lightcoral;
+}
+
+/* Mouse over link */
+footer a:hover {
+    color: white;
+}
+
+/* Selected link */
+footer a:active {
+    color: white;
 }
 /* End of footer */

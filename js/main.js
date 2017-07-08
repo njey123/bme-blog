@@ -3,14 +3,16 @@ function main() {
   $('.container-fluid').hide().fadeIn(1000);
 
   // Slide titles on homepage onto page
-  $('#homepage-titles').hide().fadeIn(200).animate({
+  $('#jumbotron-titles').hide().fadeIn(250).animate({
     'margin-top': '3%'
-  }, 400);
+  }, 500);
 
-  // Hovering over nav bar
-  $( "nav p" ).hover(function() {
-    $(this).toggleClass('nav-p-active');
-  });
+  // Scroll to specific section
+  $("#about-me-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $('.homepage-content').offset().top
+    }, 750);
+});
 }
 
 $(document).ready(main);
