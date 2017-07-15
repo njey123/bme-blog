@@ -1,0 +1,25 @@
+.page-content {
+  padding-top: 57px;
+}
+
+.header-section {
+  width: 100%;
+  padding: 25px 25px;
+  background-color: lightcoral;
+  font-size: 40px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-section p {
+  font-family: 'Shadows Into Light Two', 'PT Sans', sans-serif;
+  font-weight: 600;
+}
+
+.header-section #horiz-line {
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: black;
+}

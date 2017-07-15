@@ -1,0 +1,48 @@
+.contact-info-section {
+  width: 100%;
+  padding: 5% 5%;
+  background-color: rgb(75, 77, 77);
+  font-size: 18px;
+  color: white;
+  align-items: center;
+}
+
+.contact-info-section p {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.contact-info-section input, textarea {
+  font-family: 'PT Sans', sans-serif;
+  width: 40%;
+  min-width: 300px;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0.4em;
+  padding-right: 0.4em;
+  border-radius: 5px;
+  color: black;
+}
+
+.contact-info-section-form p {
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+}
+
+.contact-info-section-form button {
+  font-family: 'PT Sans', sans-serif;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  color: black;
+  background-color: #83aaf0;
+  border: none;
+}
+
+.contact-info-section-form-asterisk {
+  color: red;
+}
+
+.contact-info-section .contact-send-button:hover,
+.contact-info-section .contact-send-button:focus {
+  background: cornflowerblue;
+}

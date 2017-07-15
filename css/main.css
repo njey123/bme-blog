@@ -1,7 +1,5 @@
-/* Need fallback fonts? */
-
 * {
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Shadows Into Light Two', 'PT Sans', sans-serif;
 }
 
 a {
@@ -52,7 +50,7 @@ a {
 }
 
 @media only screen and (max-width: 766px) {
-.collapsing, .in {background-color: rgb(35, 37, 37); border-radius: 5px;}
+.collapsing, .in {position: relative; top: -2px; background-color: rgb(35, 37, 37); border-radius: 5px;}
 .collapsing ul li a, .in ul li a {color: white; margin-right: 23px;}
 .collapsing ul li a:hover, .in ul li a:hover {color: white; margin-right: 23px;}
 .collapsing ul li a:focus, .in ul li a:focus {color: white; margin-right: 23px;}
@@ -87,7 +85,7 @@ a {
 }
 /* End of jumbotron */
 
-.homepage-content {
+.about-me-section {
   width: 100%;
   min-height: 500px;
   padding: 10% 5%;
@@ -103,29 +101,29 @@ a {
   align-items: center;
 }
 
-.homepage-content a {
+.about-me-section a {
     color: white;
     text-decoration: underline;
 }
 
 /* Unvisited link */
-.homepage-content a:link {
+.about-me-section a:link {
     color: white;
 }
 
 /* Visited link */
-.homepage-content a:visited {
+.about-me-section a:visited {
     color: white;
 }
 
 /* Mouse over link */
-.homepage-content a:hover {
-    color: orange;
+.about-me-section a:hover {
+    color: gold;
 }
 
 /* Selected link */
-.homepage-content a:active {
-    color: orange;
+.about-me-section a:active {
+    color: gold;
 }
 
 /* Start of footer */
@@ -141,6 +139,11 @@ footer {
 footer .row {
   display: flex;
   align-items: center;
+}
+
+footer p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12.5px;
 }
 
 footer .col-sm-8 {
